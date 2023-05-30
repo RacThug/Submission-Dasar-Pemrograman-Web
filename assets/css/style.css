@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #222831;
+  color: #eeeeee;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 10px;
+}
+
+.jumbotron img {
+  height: 150px;
+  width: 150px;
+}
+
+.navbar-container {
+  background-color: #393e46;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #00adb5;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+  background-color: #425c77;
+  color: #eeeeee;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+footer {
+  padding: 20px;
+  color: #00adb5;
+  background-color: #393e46;
+  text-align: center;
+}
+
+th,
+td {
+  font-size: 10px;
+  text-align: justify;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 10px #222831;
+}
+
+.featured-image {
+  width: 50%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 10px 10px 10px #222831;
+  border-radius: 3px;
+}
+
+.featured-image-arti {
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 10px 10px 10px #222831;
+  border-radius: 3px;
+}
+
+.slideshow {
+  object-fit: cover;
+  position: relative;
+  margin: auto;
+}
+
+.slides-img {
+  display: none;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #393e46;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active {
+  background-color: #00adb5;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
